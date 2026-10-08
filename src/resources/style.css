@@ -1,0 +1,61 @@
+.root {
+    -fx-font-family: "Segoe UI", "SF Pro Text", system-ui, sans-serif;
+}
+
+/* Progress Slider */
+.progress-slider .track {
+    -fx-background-color: rgba(255, 255, 255, 0.25);
+    -fx-background-radius: 4;
+    -fx-pref-height: 4;
+}
+
+.progress-slider .filled-track {
+    -fx-background-color: white;
+    -fx-background-radius: 4;
+}
+
+.progress-slider .thumb {
+    -fx-background-color: white;
+    -fx-pref-width: 14;
+    -fx-pref-height: 14;
+    -fx-background-radius: 7;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 4, 0, 0, 1);
+}
+
+/* Volume Slider */
+.volume-slider .track {
+    -fx-background-color: rgba(255, 255, 255, 0.2);
+    -fx-background-radius: 3;
+    -fx-pref-height: 3;
+}
+
+.volume-slider .filled-track {
+    -fx-background-color: white;
+}
+
+.volume-slider .thumb {
+    -fx-background-color: white;
+    -fx-pref-width: 10;
+    -fx-pref-height: 10;
+    -fx-background-radius: 5;
+}
+
+/* List View */
+.list-view {
+    -fx-background-color: transparent;
+}
+
+.list-cell {
+    -fx-text-fill: white;
+    -fx-padding: 8 12;
+    -fx-background-color: transparent;
+}
+
+.scroll-bar {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: rgba(255,255,255,0.3);
+    -fx-background-radius: 4;
+}
