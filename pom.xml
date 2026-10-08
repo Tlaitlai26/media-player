@@ -8,6 +8,14 @@
     <artifactId>javafx-media-player</artifactId>
     <version>1.0</version>
 
+    <!-- === JPro Repository — CRITICAL FIX === -->
+    <pluginRepositories>
+        <pluginRepository>
+            <id>jpro-repo</id>
+            <url>https://maven.jpro.one/releases/</url>
+        </pluginRepository>
+    </pluginRepositories>
+
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
@@ -42,7 +50,6 @@
         </resources>
 
         <plugins>
-            <!-- Java Compiler -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -53,7 +60,6 @@
                 </configuration>
             </plugin>
 
-            <!-- JavaFX Run Plugin -->
             <plugin>
                 <groupId>org.openjfx</groupId>
                 <artifactId>javafx-maven-plugin</artifactId>
@@ -63,7 +69,6 @@
                 </configuration>
             </plugin>
 
-            <!-- JPro — Run & Deploy as Web App -->
             <plugin>
                 <groupId>com.jpro</groupId>
                 <artifactId>jpro-maven-plugin</artifactId>
